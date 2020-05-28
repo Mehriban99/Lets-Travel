@@ -1,0 +1,1228 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  padding: 30px 0;
+  transition: .3s all ease-in-out;
+}
+.header .header-right {
+  text-align: right;
+}
+.header .header-right .dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+.header .header-right .dropdown:hover::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: -30px;
+  background-color: #ff6600;
+}
+.header .header-right .dropdown:hover .drop-content {
+  visibility: visible;
+  top: 80px;
+}
+.header .header-right .dropdown:hover .dropbtn a {
+  color: #ff6600;
+}
+.header .header-right .dropdown .dropbtn a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  transition: .3s all ease-in-out;
+}
+.header .header-right .dropdown .dropbtn a i {
+  padding-left: 3px;
+}
+.header .header-right .dropdown .drop-content {
+  border-top: 2px solid #ff6600;
+  min-width: 170px;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  background-color: #ffffff;
+  text-align: left;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+}
+.header .header-right .dropdown .drop-content a {
+  display: block;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  color: #888;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #eee;
+  letter-spacing: 0.5px;
+  padding: 10px 20px 10px 15px;
+}
+.header .header-right .dropdown .drop-content a:hover {
+  background-color: #FAFAFA;
+}
+.header .header-right .dropdown .drop-content .sp {
+  position: relative;
+}
+.header .header-right .dropdown .drop-content .sp i {
+  padding-left: 60%;
+}
+.header .header-right .dropdown .drop-content .sp:hover .alt {
+  visibility: visible;
+}
+.header .header-right .dropdown .drop-content .sp .alt {
+  background-color: white;
+  position: absolute;
+  min-width: 170px;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+  top: 0;
+  left: 100%;
+}
+.header .header-right .dropdown:nth-child(1)::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: -30px;
+  background-color: #ff6600;
+}
+.header .header-right .dropdown:nth-child(1) .dropbtn a {
+  color: #ff6600;
+}
+
+.slide .slideAll {
+  overflow: hidden;
+}
+.slide .slideAll .slick-next {
+  z-index: 5;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 25px 30px 15px;
+  margin-right: 8rem;
+  margin-top: -6rem;
+}
+.slide .slideAll .slick-next::before {
+  content: '>';
+}
+.slide .slideAll .slick-next:hover {
+  border: 2px solid #ff6600;
+}
+.slide .slideAll .slick-prev {
+  z-index: 5;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 25px 30px 15px;
+  margin-left: 8rem;
+  margin-top: -6rem;
+}
+.slide .slideAll .slick-prev::before {
+  content: '<';
+}
+.slide .slideAll .slick-prev:hover {
+  border: 2px solid #ff6600;
+}
+.slide .slideAll .slideBox {
+  text-align: center;
+  padding: 14rem 0 27rem 0;
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/revslider/homepage1/main_slide_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide .slideAll .slideBox span {
+  display: inline;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding-right: 15px;
+  font-weight: bold;
+}
+.slide .slideAll .slideBox img {
+  display: inline;
+}
+.slide .slideAll .slideBox .span2 {
+  display: inline;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  padding-left: 15px;
+}
+.slide .slideAll .slideBox h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 10px;
+  padding: 30px 0 10px 0;
+  font-weight: bold;
+}
+.slide .slideAll .slideBox p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.slide .slideAll .slideBox button {
+  z-index: 10;
+  padding: 18px 28px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #ff6600;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #ff6600;
+  transition: .3s all ease-in-out;
+}
+.slide .slideAll .slideBox button i {
+  font-size: 18px;
+  padding-right: 5px;
+}
+.slide .slideAll .slideBox button:hover {
+  background-color: transparent;
+}
+
+.booktravel {
+  margin-top: -18.5rem;
+  overflow: hidden;
+}
+.booktravel .headings {
+  margin: auto;
+}
+.booktravel .headings .firstrow {
+  justify-content: center;
+}
+.booktravel .headings .firstrow .column {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px 25px;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+.booktravel .secondrow {
+  padding: 5rem 0;
+  position: relative;
+  display: none;
+}
+.booktravel .secondrow p {
+  font-size: 14px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.booktravel .secondrow .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .3;
+}
+.booktravel .secondrow .btn button {
+  padding: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #ff6600;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #ff6600;
+  transition: .3s all ease-in-out;
+}
+.booktravel .secondrow .btn button i {
+  font-size: 18px;
+  padding-right: 5px;
+}
+.booktravel .secondrow .btn button:hover {
+  background-color: transparent;
+  color: #ff6600;
+}
+.booktravel .secondrow .pt1 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0 0 10px 0;
+}
+.booktravel .secondrow .pt1 input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Open Sans', sans-serif;
+}
+.booktravel .secondrow .pt1 input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+.booktravel .secondrow .pt1 select {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+.booktravel .secondrow .pt1 i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  padding: 0 10px 0 15px;
+}
+.booktravel .ilk {
+  display: block;
+}
+
+.thebest {
+  text-align: center;
+  padding: 6.5rem 0 3.5rem 0;
+}
+.thebest h3 {
+  font-size: 32px;
+  color: #222222;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding-bottom: 10px;
+  letter-spacing: 6px;
+}
+.thebest p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #6a6a6a;
+}
+
+.prague .boxes {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/01/slide_7-1-480x480.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 5rem 10px 2rem 10px;
+  border-radius: 5px;
+  margin: 0 0 30px 30px;
+  width: 30%;
+  position: relative;
+  z-index: 10;
+}
+.prague .boxes:hover .overlay {
+  opacity: .7;
+}
+.prague .boxes:hover h5 {
+  color: #ff6600;
+}
+.prague .boxes .overlay {
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  background-color: black;
+  transition: .3s all ease-in-out;
+  z-index: -10;
+}
+.prague .boxes .stars {
+  font-size: 11px;
+  padding: 20px 3px 20px 3px;
+}
+.prague .boxes h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: .3s all ease-in-out;
+}
+.prague .boxes i {
+  color: #ffde00;
+  font-size: 12px;
+  padding: 15px 0 10px 15px;
+}
+.prague .boxes i:nth-child(5) {
+  color: white;
+}
+.prague .boxes h6 {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+.prague .boxes .add {
+  padding-top: 3rem;
+}
+.prague .boxes .add .frst span {
+  font-size: 11px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.prague .boxes .add .frst i {
+  font-size: 14px;
+  color: white;
+  padding-right: 5px;
+}
+.prague .boxes .add .frst small {
+  color: #cdcdcd;
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif;
+}
+.prague .boxes .add .flagbtn {
+  padding: 15px 0;
+}
+.prague .boxes .add .flagbtn i {
+  color: white;
+  font-size: 12px;
+}
+.prague .boxes .add .flagbtn button {
+  outline: none;
+  padding: 12px 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #ff6600;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #ff6600;
+  transition: .3s all ease-in-out;
+}
+.prague .boxes .add .flagbtn button i {
+  font-size: 18px;
+  padding: 0 5px 0 0;
+}
+.prague .boxes .add .flagbtn button:hover {
+  background-color: transparent;
+  color: #ff6600;
+}
+.prague .bxs {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/02/slide_11-1-480x480.jpg);
+}
+
+.slide2 .slideAll2 {
+  overflow: hidden;
+  z-index: 10;
+}
+.slide2 .slideAll2 .slick-next {
+  z-index: 5;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 25px 30px 15px;
+  margin-right: 8rem;
+  margin-top: 1rem;
+}
+.slide2 .slideAll2 .slick-next::before {
+  content: '>';
+}
+.slide2 .slideAll2 .slick-next:hover {
+  border: 2px solid #ff6600;
+}
+.slide2 .slideAll2 .slick-prev {
+  z-index: 5;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 25px 30px 15px;
+  margin-left: 8rem;
+  margin-top: 1rem;
+}
+.slide2 .slideAll2 .slick-prev::before {
+  content: '<';
+}
+.slide2 .slideAll2 .slick-prev:hover {
+  border: 2px solid #ff6600;
+}
+.slide2 .slideAll2 .slideboxes {
+  background-color: grey;
+  text-align: center;
+  padding: 6rem 0 9rem 0;
+  margin-top: 3rem;
+  background-image: url(https://demo.nrgthemes.com/projects/letstravelwp/wp-content/uploads/2015/12/tour_slider_bg-1.jpg?id=30);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide2 .slideAll2 .slideboxes h5 {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.slide2 .slideAll2 .slideboxes h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  color: white;
+  letter-spacing: 6.3px;
+  font-weight: bold;
+}
+.slide2 .slideAll2 .slideboxes span {
+  font-size: 11px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.slide2 .slideAll2 .slideboxes i {
+  color: #ffde00;
+  font-size: 11px;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+.slide2 .slideAll2 .slideboxes i:nth-child(6) {
+  color: white;
+}
+.slide2 .slideAll2 .slideboxes small {
+  color: white;
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif;
+}
+.slide2 .slideAll2 .slideboxes .calendar {
+  font-size: 14px;
+  color: white;
+  padding-right: 5px;
+}
+
+.grid {
+  overflow: hidden;
+}
+.grid .photos {
+  text-align: center;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+}
+.grid .photos:hover .overlay {
+  opacity: .7;
+}
+.grid .photos:hover .writing .writing2 h3 {
+  color: #ff6600;
+}
+.grid .photos:hover .writing .writing2 p {
+  visibility: visible;
+  transform: translateY(-40%);
+}
+.grid .photos:hover .writing .writing2 span {
+  visibility: visible;
+  transform: translateY(50%);
+}
+.grid .photos .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .5;
+  z-index: 8;
+  transition: .3s all ease-in-out;
+}
+.grid .photos .writing {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.grid .photos .writing .writing2 {
+  position: relative;
+}
+.grid .photos .writing .writing2 h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  padding-top: 50px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+.grid .photos .writing .writing2 p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: .3s all ease-in-out;
+  padding-top: 50px;
+  visibility: hidden;
+}
+.grid .photos .writing .writing2 span {
+  margin: 0 -50px;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+}
+.grid .photos .writing .writing2 small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #ff6600;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: .3s all ease-in-out;
+}
+
+.slideAll3 {
+  overflow: hidden;
+}
+.slideAll3 .slick-next {
+  z-index: 5;
+  background-color: #ff6600;
+  border: 4px solid white;
+  border-radius: 50px;
+  padding: 6px 21px 26px 11px;
+  margin-right: 25px;
+}
+.slideAll3 .slick-next::before {
+  content: '>';
+}
+.slideAll3 .slick-next:hover {
+  border: 4px solid #ff6600;
+  background-color: white;
+}
+.slideAll3 .slick-next:hover::before {
+  color: #707070;
+}
+.slideAll3 .slick-prev {
+  z-index: 5;
+  background-color: #ff6600;
+  border: 4px solid white;
+  border-radius: 50px;
+  padding: 6px 21px 26px 11px;
+  margin-left: 25px;
+}
+.slideAll3 .slick-prev::before {
+  content: '<';
+}
+.slideAll3 .slick-prev:hover {
+  border: 4px solid #ff6600;
+  background-color: white;
+}
+.slideAll3 .slick-prev:hover::before {
+  color: #707070;
+}
+.slideAll3 .frboxes {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/01/country-06-1-590x460.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem 2rem 2.5rem 2rem;
+  border-radius: 5px;
+  z-index: 10;
+  cursor: pointer;
+  position: relative;
+  margin-left: 18px;
+}
+.slideAll3 .frboxes:hover .overlay {
+  opacity: .8;
+}
+.slideAll3 .frboxes:hover h3 {
+  color: #ff6600;
+}
+.slideAll3 .frboxes i {
+  color: #ffde00;
+  font-size: 12px;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+.slideAll3 .frboxes h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  padding-bottom: 7rem;
+  transition: .3s all ease-in-out;
+}
+.slideAll3 .frboxes .tour {
+  padding: 0 10px;
+  border-right: 1px solid white;
+}
+.slideAll3 .frboxes .tour span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  padding-right: 7px;
+}
+.slideAll3 .frboxes .tour small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+.slideAll3 .frboxes .tour:nth-child(3) {
+  padding-left: 0;
+}
+.slideAll3 .frboxes .tour:nth-child(3) {
+  border-right: none;
+}
+.slideAll3 .frboxes p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  padding: 30px 0;
+}
+.slideAll3 .frboxes button {
+  outline: none;
+  padding: 12px 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #ff6600;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #ff6600;
+  transition: .3s all ease-in-out;
+}
+.slideAll3 .frboxes button:hover {
+  background-color: transparent;
+  color: #ff6600;
+}
+.slideAll3 .frboxes .overlay {
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .5;
+  z-index: -10;
+  transition: .3s all ease-in-out;
+}
+.slideAll3 .greece {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/01/country-01-1-590x460.jpg);
+}
+.slideAll3 .spain {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/01/country-07-1-590x460.jpg);
+}
+.slideAll3 .mexico {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/01/country-03-1-590x460.jpg);
+}
+
+.italy .gridpart .littleparts {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/01/slide_7-1-270x220.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 1rem 1rem 1rem;
+  border-radius: 5px;
+  position: relative;
+  z-index: 10;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.italy .gridpart .littleparts:hover h3 {
+  color: #ff6600;
+}
+.italy .gridpart .littleparts:hover .overlay {
+  opacity: .8;
+}
+.italy .gridpart .littleparts .overlay {
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  background-color: black;
+  transition: .3s all ease-in-out;
+  z-index: -10;
+}
+.italy .gridpart .littleparts h3 {
+  font-size: 16px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: .3s all ease-in-out;
+}
+.italy .gridpart .littleparts h4 {
+  font-size: 14px;
+  color: #ff6600;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+.italy .gridpart .littleparts:nth-child(4) {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/02/slide_11-1-270x220.jpg);
+}
+.italy .textpart {
+  padding-top: 10px;
+  background-image: url(https://demo.nrgthemes.com/projects/letstravelwp/wp-content/uploads/2015/12/map_1-1.png?id=57);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.italy .textpart h3 {
+  font-size: 22px;
+  color: #222222;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+}
+.italy .textpart p {
+  font-size: 14px;
+  color: #6a6a6a;
+  font-family: 'Open Sans', sans-serif;
+}
+.italy .textpart h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  padding: 25px 0 30px 0;
+}
+.italy .textpart .columns {
+  padding-bottom: 2rem;
+}
+.italy .textpart .columns a {
+  position: relative;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #bebebe;
+  font-family: 'Open Sans', sans-serif;
+}
+.italy .textpart .columns a::before {
+  position: absolute;
+  content: '●';
+  font-size: 8px;
+  bottom: 50%;
+  left: 0%;
+  color: #ff6600;
+}
+.italy .textpart .flagbtn {
+  padding: 15px 0;
+}
+.italy .textpart .flagbtn button {
+  outline: none;
+  padding: 12px 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #ff6600;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #ff6600;
+  transition: .3s all ease-in-out;
+}
+.italy .textpart .flagbtn button i {
+  font-size: 18px;
+  padding: 0 5px 0 0;
+}
+.italy .textpart .flagbtn button:hover {
+  background-color: transparent;
+  color: #ff6600;
+}
+
+.next {
+  padding-top: 5px;
+}
+.next .textpart {
+  text-align: right;
+  background-image: url(https://demo.nrgthemes.com/projects/letstravelwp/wp-content/uploads/2015/12/map_2-1.png?id=62);
+}
+.next .textpart .clmn {
+  justify-content: flex-end;
+}
+
+.foot {
+  background-color: #060C17;
+  padding: 5rem 0 3rem 0;
+}
+.foot .footparts p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  margin-top: 30px;
+  line-height: 24px;
+  margin-bottom: 5rem;
+}
+.foot .footparts .social {
+  font-size: 22px;
+  color: white;
+  transition: .3s all ease-in-out;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.foot .footparts .social:hover {
+  color: #ff6600;
+}
+.foot .footparts h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.foot .footparts .news .img {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.foot .footparts .news .img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .4;
+}
+.foot .footparts .news .img:hover .overlay {
+  opacity: .8;
+}
+.foot .footparts .news .img2 {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/01/blog-02-1-480x480.jpg);
+  background-position: initial;
+  background-size: cover;
+}
+.foot .footparts .news .img3 {
+  background-image: url(https://demo.nrgthemes.com/projects/premium_travel/wp-content/uploads/2016/01/blog-06-1-480x480.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.foot .footparts .news .newstext h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: white;
+  line-height: 24px;
+  transition: .3s all ease-in-out;
+}
+.foot .footparts .news .newstext h4:hover {
+  color: #ff6600;
+}
+.foot .footparts .news .newstext h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #ff6600;
+}
+.foot .footparts .news .newstext a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #cccccc;
+  font-style: italic;
+}
+.foot .footparts span {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  background: #0d1b33;
+  padding: 10px 18px;
+  border-radius: 30px;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+.foot .footparts span:hover::after {
+  visibility: visible;
+  transform: scale(1);
+}
+.foot .footparts span::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  padding: 10px 18px;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6600;
+  z-index: -10;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+  transform: scale(0);
+}
+.foot .footparts h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #6a6a6a;
+  margin-bottom: 40px;
+}
+.foot .footparts a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #6a6a6a;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 40px;
+  transition: .3s all ease-in-out;
+}
+.foot .footparts a:hover {
+  color: #ff6600;
+}
+.foot .footparts i {
+  font-size: 14px;
+  color: #ff6600;
+  padding-right: 10px;
+}
+
+.foot2 {
+  background-color: #040914;
+  padding: 30px 0;
+}
+.foot2 p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}
+
+.media-header {
+  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 101;
+}
+.media-header .header-left img {
+  padding: 15px 0;
+  width: 80%;
+}
+.media-header .header-right {
+  padding: 15px;
+  font-size: 22px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.media-alt {
+  display: none;
+}
+.media-alt .header-alt {
+  text-align: center;
+}
+.media-alt .header-alt .alt {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.media-alt .header-alt .alt:hover a {
+  color: #ff6600;
+}
+.media-alt .header-alt .alt:hover i {
+  color: #ff6600;
+}
+.media-alt .header-alt .alt a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #222222;
+  text-decoration: none;
+  transition: .3s all ease-in-out;
+}
+.media-alt .header-alt .alt i {
+  columns: #222222;
+  font-size: 10px;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+.media-alt .header-alt .menu-alt {
+  display: none;
+  border-top: 2px solid #ff6600;
+}
+.media-alt .header-alt .menu-alt P {
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #888888;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+.media-alt .header-alt .menu-alt P:hover {
+  background-color: #FAFAFA;
+}
+
+.media-booktravel {
+  display: none;
+  overflow: hidden;
+}
+.media-booktravel .p-click {
+  background-color: #F8F8F8;
+  border: 1px solid #f0f0f0;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 5px;
+}
+.media-booktravel .p-click P {
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+  font-family: 'Open Sans', sans-serif;
+}
+.media-booktravel .p-alt {
+  background-color: #F8F8F8;
+  padding: 20px 0;
+  display: none;
+}
+.media-booktravel .p-alt .check {
+  text-align: center;
+  margin: 0 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.media-booktravel .p-alt .check h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #222222;
+  padding-top: 30px;
+}
+.media-booktravel .p-alt .check input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 10px 0 10px 40px;
+  font-size: 13px;
+  color: #3b3b3b;
+}
+.media-booktravel .p-alt .check select {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 10px 0 10px 20px;
+  font-size: 13px;
+  color: #222222;
+}
+.media-booktravel .p-alt button {
+  padding: 18px 20px;
+  margin-top: 4rem;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #ff6600;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid #ff6600;
+  transition: .3s all ease-in-out;
+}
+.media-booktravel .p-alt button i {
+  font-size: 18px;
+  padding-right: 5px;
+  transition: .3s all ease-in-out;
+}
+.media-booktravel .p-alt button:hover {
+  background-color: transparent;
+  color: #ff6600;
+}
+.media-booktravel .p-alt button:hover i {
+  color: #ff6600;
+}
+.media-booktravel .p-alt1 {
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .header {
+    display: none;
+  }
+
+  .media-header {
+    display: block;
+  }
+
+  .slide .slideAll .slideBox {
+    padding: 20rem 0 5rem 0;
+    background-position: top;
+    background-size: auto;
+  }
+  .slide .slideAll .slideBox span {
+    font-size: 5px;
+  }
+  .slide .slideAll .slideBox .span2 {
+    font-size: 8px;
+  }
+  .slide .slideAll .slideBox h3 {
+    font-size: 23px;
+  }
+  .slide .slideAll .slideBox p {
+    font-size: 5px;
+  }
+  .slide .slideAll .slick-next {
+    margin-top: 7rem;
+    margin-right: 2rem;
+  }
+  .slide .slideAll .slick-prev {
+    margin-top: 7rem;
+    margin-left: 2rem;
+  }
+
+  .booktravel {
+    display: none;
+  }
+
+  .media-booktravel {
+    display: block;
+  }
+
+  .prague .boxes {
+    width: 90%;
+  }
+  .prague .boxes .flagbtn {
+    text-align: right;
+  }
+  .prague .boxes .add .flagbtn {
+    text-align: right;
+  }
+
+  .slide2 .slideAll2 .slick-next {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .slide2 .slideAll2 .slick-prev {
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+  .slide2 .slideAll2 .slideboxes {
+    background-position: center;
+  }
+  .slide2 .slideAll2 .slideboxes h3 {
+    padding-top: 15px;
+  }
+
+  .france .slideAll3 .frboxes .tours {
+    padding: 0 12px;
+  }
+
+  .next .textpart .columns a::before {
+    right: 15%;
+  }
+
+  .foot .footparts {
+    padding-top: 40px;
+  }
+  .foot .footparts .tagsrow {
+    padding: 0 15px;
+  }
+  .foot .footparts:nth-child(1) {
+    padding-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
